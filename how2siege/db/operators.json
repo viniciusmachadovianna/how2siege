@@ -1,0 +1,27 @@
+{
+    "operators": [
+        {
+            "nick": "Valkyrie",
+            "name": {
+                "firstName": "Meghan",
+                "lastName": "J. Castellano"
+            },
+            "birth": {
+                "date": "21/07",
+                "city": "Oceanside",
+                "state": "California",
+                "country": "USA"
+            },
+            "group": "SEAL",
+            "squad":"Ghosteyes",
+            "quote": "If you don’t constantly feel like you’re being watched, then you aren’t paying attention",
+            "side":"Defender",
+            "specialties":["intel","support"],
+            "health":2,
+            "speed":2,
+            "difficulty":2
+        },
+        {
+        }
+    ]
+}
