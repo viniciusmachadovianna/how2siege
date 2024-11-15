@@ -1,0 +1,51 @@
+body{
+    background: #252525;
+    color: #fff;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+}
+ul{
+    width: 500px;
+    background: #787878;
+}
+li{
+    cursor: pointer;
+    list-style: none;
+}
+[data-map]{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    position: relative;
+    background: #afafaf;
+    width: 300px;
+    margin: 10px;
+}
+[data-map] > span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 4em;
+    display: none;
+    transition: .7s ease;
+}
+li:hover > span{
+    display: block;
+}
+.mapIcon{
+    width: 300px;
+}
+[data-map]{
+    border: 5px solid transparent;
+    transition: 1s;
+}
+[data-map]:hover{
+    border: 5px solid white;
+}
+canvas{
+    border: 5px solid #000;
+    background-color: #787878;
+    cursor: crosshair;
+    width: 1000px;
+    height: 1000px;
+}

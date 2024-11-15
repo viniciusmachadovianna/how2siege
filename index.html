@@ -8,24 +8,39 @@
     <title>how2siege</title>
 </head>
 <body>
-    <nav>r6</nav>
-    <a href="https://www.ubisoft.com/pt-br/game/rainbow-six/siege/news-updates/seasons">seasons</a>
-    <a href="https://www.ubisoft.com/en-gb/game/rainbow-six/siege/news-updates/1P21T5Rllq7X72E0zSGpEG/y9s3-designers-notes">Y9S3 notes</a>
-    <a href="https://r6.tracker.network/r6siege/profile/ubi/penelopecharmsa/overview">self tracker</a>
-    <a href="https://api.tracker.gg/api/v2/r6siege/standard/matches/ubi/penelopecharmsa?gamemode=pvp_ranked&next=6"> api list matches</a>
-    <a href="https://www.ubisoft.com/pt-br/game/rainbow-six/siege/game-info/operators">operators</a>
-    <a href="https://www.ubisoft.com/pt-br/game/rainbow-six/siege/game-info/maps">maps</a>
+    <header>
+        <a href="https://www.ubisoft.com/pt-br/game/rainbow-six/siege/game-info/maps">oficial r6 maps</a>
+    </header>
+    <nav>
+        <ul class="maps">
+            <span class="listTitle">MAPS</span>
+            <li  data-map="bank">
+                <img src="assets/maps/bank.avif" class="mapIcon">
+                <span>BANK</span>
+            </li>
+            <li data-map="border">
+                <img src="assets/maps/border.avif" class="mapIcon">
+                <span>BORDER</span>
+            </li>
+        </ul>
+        <ul class="operators">
+            <span class="listTitle">OPERATORS</span>
+            <li>
+                <span></span>
+                <img src="assets/operators/atk/ACE/100px-R6S_Ace_Icon_2021_allmode.png" alt="">
+            </li>
+            <li>
+                <span></span>
+                <img src="assets/operators/def/alibi/100px-R6S_Alibi_Icon_2021_allmode.png" alt="">
+            </li>
+        </ul>
+    </nav>
+    <nav class="agents"></nav>
+    <button id="clearButton">x</button>
+    <input type="color" id="lineColor" value="#000000">
 
-    <section id="maps">
-        <div class="map" id="stadiumBravo">Stadium Alpha
-            Location: Greece
-            Released: Operation Brutal Swarm (September 2022)
-            Playlists: Standard, Quick Match, Team Deathmatch
-            Map reworked: June 2024
-            Re-discover Stadium! The iconic map has been given some updates to make it more competitive. Across Stadium Alpha map, bulletproof glass has been removed, meaning windows can now be destroyed. The layouts and destructibility for both maps has also been changed to improve player comfort and navigation, and provide more of a challenge for Attackers.
-        </div>
-        <img src="assets/maps/bank/r6-maps-bank.avif" alt="">
-    </section>
+    <canvas></canvas>
+
 </body>
 <script src="script.js"></script>
 </html>
