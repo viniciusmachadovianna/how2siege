@@ -5,7 +5,7 @@ const maps = document.querySelectorAll('li');
 const color = document.getElementById('lineColor');
 maps.forEach(map => {
     map.addEventListener("click",(e)=>{
-        mapCanva.style.display = "initial";
+        mapCanva.style.display = "flex";
         canvas.style.background =
         `url("assets/maps/bp/${e.currentTarget.getAttribute('data-map')}-1F.jpg")`;
     })
