@@ -54,7 +54,7 @@ li:hover > span{
     border-radius: 10px;
     color: #fff;
 }
-.map{
+#map{
     position: absolute;
     height: 100vh;
     width: 100%;
